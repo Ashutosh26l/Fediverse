@@ -29,7 +29,6 @@ Photoflux explores the future of decentralized social media using:
 > This is required because ngrok generates a new public URL on each restart, which must be updated in your application configuration (e.g., `BASE_URL`).
 
 
-
 ## 🚀 Key Features
 
 ### Core Platform
