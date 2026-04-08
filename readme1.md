@@ -1,11 +1,15 @@
-# PhotoFlux: Fediverse-Compatible Photo Sharing Platform
+# 🌍 PhotoFlux: Fediverse-Compatible Photo Sharing Platform
+
+![PhotoFlux Logo](./frontend/src/logo.svg)
+
+![PhotoFlux Preview](./frontend/public/1.jpg)
 
 PhotoFlux is a decentralized photo-sharing platform built with ActivityPub.
 It enables local users and remote users (for example, Mastodon accounts) to follow each other and interact across federated servers.
 
 This project showcases practical federation, distributed social networking, and open interoperability standards.
 
-## Features
+## 🔥 Features
 
 ### Core Platform Features
 - Secure user authentication with JWT.
@@ -24,13 +28,17 @@ This project showcases practical federation, distributed social networking, and 
 - Follow/Accept activity flow support.
 - Public outbox feed support.
 
-## Setup
+## 📦 Setup
 
 ### Prerequisites
 - Node.js (recommended: LTS version)
 - npm
 - MongoDB (local or hosted)
 - ngrok (required for remote federation testing)
+
+> ⚠️ **Important (ngrok users)**
+> Run `ngrok http 4000` every time you restart the backend.
+> Update `BASE_URL` and `DOMAIN` in `backend/.env` after each restart because ngrok generates a new public URL.
 
 ### 1. Clone the Repository
 ```bash
@@ -87,7 +95,7 @@ cd frontend
 npm start
 ```
 
-## Usage
+## ⚙️ Usage
 
 ### Local Usage
 1. Register a new account.
@@ -109,7 +117,7 @@ npm start
 - `/users/:username/followers`
 - `/users/:username/following`
 
-## Architecture Overview
+## 🛠️ Architecture Overview
 
 ```text
 [React Frontend]
@@ -121,7 +129,7 @@ npm start
     MongoDB
 ```
 
-## Security and Key Management
+## 🔐 Security and Key Management
 
 PhotoFlux uses per-user RSA key pairs for ActivityPub federation.
 Keys are generated automatically and stored in MongoDB during user registration.
@@ -133,7 +141,7 @@ Important notes:
 
 For details, see [KEY_MANAGEMENT.md](./KEY_MANAGEMENT.md).
 
-## Tech Stack
+## 🧰 Tech Stack
 
 ### Backend
 - Node.js
@@ -153,23 +161,23 @@ For details, see [KEY_MANAGEMENT.md](./KEY_MANAGEMENT.md).
 - Postman
 - Git/GitHub
 
-## Additional Documentation
+## 📖 Additional Documentation
 
 - [API_Docs.md](./API_Docs.md)
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [KEY_MANAGEMENT.md](./KEY_MANAGEMENT.md)
 
-## Future Enhancements
+## 🚀 Future Enhancements
 - Remote post ingestion into local feed.
 - ActivityPub Like and Announce support.
 - Improved media federation.
 - Moderation and reporting tools.
 - Scalable inbox queue processing.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License.
 
-## Author
+## 👤 Author
 
 Avdhut Magar
