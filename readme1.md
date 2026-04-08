@@ -1,9 +1,5 @@
 # 🌍 PhotoFlux: Fediverse-Compatible Photo Sharing Platform
 
-![PhotoFlux Logo](./frontend/src/logo.svg)
-
-![PhotoFlux Preview](./frontend/public/1.jpg)
-
 PhotoFlux is a decentralized photo-sharing platform built with ActivityPub.
 It enables local users and remote users (for example, Mastodon accounts) to follow each other and interact across federated servers.
 
